@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 ```
 
 
-## 2. ubuntu20.04 系统安装 zlib 
+## 2. ubuntu22.04 系统安装 zlib 
 
 ```shell
 apt-get install -y zlib1g zlib1g.dev zlib
