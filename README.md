@@ -58,7 +58,7 @@ apt-get install -y zlib1g zlib1g.dev zlib
 ```
 cd /opt
 wget https://github.com/madler/zlib/archive/refs/tags/v1.2.11.tar.gz
-tar -zxvf v1.2.11.tar.gz
+tar -zxvf zlib-1.2.11.tar.gz
 cd zlib-1.2.11
 mkdir _build
 ./configure --prefix=/home/lixy/Clion/fast_zlib_test/zlib-1.2.11/_build --shared --static
