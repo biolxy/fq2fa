@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <zlib.h>
-#include "klib/kseq.h"
+#include "kseq.h"
 
-
-// gcc -lz -Lzlib -o fq2fa_zlib fq2fa2.c
-// gcc -o fq2fa_fast_zlib fq2fa2.c -I/home/lixy/Clion/fast_zlib_test/zlib-1.2.12/build/include -L/home/lixy/Clion/fast_zlib_test/zlib-1.2.12/build/lib -lz
-// $ md5sum fq2fa_zlib fq2fa_fast_zlib
-// d7870660082e47d66314dd9cbb72d5c0  fq2fa_zlib
-// 2bdfb104f82bddec142b9fa8c9c4ec82  fq2fa_fast_zlib
 
 KSEQ_INIT(gzFile, gzread)
 
