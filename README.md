@@ -83,9 +83,10 @@ gcc -o fq2fa_zlib-ubuntu fq2fa.c -lz -Lzlib
 `raw.fq.gz` 太小，体现不出速度差异
 
 ```
-Tfile=" "
-for i in $(seq 1 100);do Tfile="$Tfile raw.fq.gz" ;done
-cat ${Tfile} > in.fq.gz 
+# rm in.fq.gz 
+for i in $(seq 1 1000);do cat raw.fq.gz >> in.fq.gz ;done
+$ zcat in.fq.gz |wc -l 
+4000000
 ```
 
 - 测试文件:
@@ -152,10 +153,6 @@ $ /usr/bin/time -v ./fq2fa_zlib-ubuntu in.fq.gz out_fq2fa_zlib-ubuntu_.fa.gz
 	Exit status: 0
 ```
 
-```
-$ zcat in.fq.gz |wc -l 
-4000000
-```
 
 ## 6. 疑问？
 
